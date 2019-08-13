@@ -4,19 +4,11 @@ httplug:
             preserve_header: true
 
     discovery:
-#        client: 'auto'
-        client: 'httplug.client.app'
-#        async_client: 'auto'
-
-
+        client: 'auto'
 
     clients:
         app:
-            factory: 'httplug.factory.guzzle6'
-            plugins: ['httplug.plugin.logger']
-            config:
-                timeout: 2
-#            http_methods_client: true
-#            plugins:
-#                - 'httplug.plugin.content_length'
-#                - 'httplug.plugin.redirect'
+            http_methods_client: true
+            plugins:
+                - 'httplug.plugin.content_length'
+                - 'httplug.plugin.redirect'
