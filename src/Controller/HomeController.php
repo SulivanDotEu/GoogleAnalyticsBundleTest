@@ -16,7 +16,7 @@ class HomeController extends AbstractController
 
         $data=array(
             'dh'=>'mydemo.com',
-            'dp'=>'/home',
+            'dp'=>'/coucouseb',
             'dt'=>'homepage',
         );
         $tracker->send($data, 'pageview');
