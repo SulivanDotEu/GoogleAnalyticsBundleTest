@@ -1,0 +1,4 @@
+happyr_google_analytics:
+    tracking_id: UA-64606848-5
+    http_client: 'httplug.client'
+    http_message_factory: 'httplug.message_factory'
